@@ -1,7 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { ArrowRight, Check, ChevronDown, ChevronUp, LockKeyhole, Minus, Plus, RotateCcw, ShieldCheck, Sparkles } from 'lucide-react'
+import { ArrowRight, Check, ChevronDown, ChevronUp, LockKeyhole, Minus, Plus, Sparkles } from 'lucide-react'
 
 const product = {
   name: 'Arc Phone',
@@ -21,7 +21,6 @@ function ProductVisual() {
         <div className="device-edge" />
         <div className="device-detail" />
       </div>
-      <div className="visual-tag"><span className="status-dot" /> Designed for momentum</div>
     </div>
   )
 }
@@ -59,7 +58,7 @@ export default function Page() {
     <main className="storefront-shell">
       <header className="topbar">
         <a className="brand" href="#top" aria-label="Arc home"><span className="brand-mark">A</span><span>arc<span className="brand-muted">/</span>studio</span></a>
-        <div className="topbar-meta"><span>Built for better days</span><span className="live-pill"><span className="status-dot" /> In stock</span></div>
+        <div className="topbar-meta"><span className="live-pill"><span className="status-dot" /> In stock</span></div>
       </header>
 
       {!checkout ? (
@@ -69,12 +68,7 @@ export default function Page() {
             <h1>Make space<br /><em>for focus.</em></h1>
             <p className="hero-description">{product.description}</p>
             <div className="hero-actions">
-              <button className="primary-button" type="button" onClick={() => setCheckout(true)}>Buy Arc One <ArrowRight size={16} /></button>
-              <span className="ship-note">Ships free · 2–4 days</span>
-            </div>
-            <div className="feature-row">
-              <div><ShieldCheck size={17} /><span>2 year warranty</span></div>
-              <div><RotateCcw size={17} /><span>30 day returns</span></div>
+              <button className="primary-button" type="button" onClick={() => setCheckout(true)}>Buy Arc Phone <ArrowRight size={16} /></button>
             </div>
           </div>
 
