@@ -4,20 +4,20 @@ import { useMemo, useState } from 'react'
 import { ArrowRight, Check, ChevronDown, ChevronUp, LockKeyhole, Minus, Plus, RotateCcw, ShieldCheck, Sparkles } from 'lucide-react'
 
 const product = {
-  name: 'Arc One',
-  eyebrow: 'The everyday carry, re-engineered.',
-  description: 'A precision-built desk companion that keeps your focus in frame and your workspace in flow.',
-  price: 189,
-  accent: 'Signal Blue',
+  name: 'Arc Phone',
+  eyebrow: 'The everyday phone, re-engineered.',
+  description: 'A precision-built smartphone that keeps your focus in frame and your everyday in flow.',
+  price: 899,
+  accent: 'Violet Glass',
 }
 
 function ProductVisual() {
   return (
-    <div className="product-visual" aria-label="Arc One device preview">
+    <div className="product-visual" aria-label="Arc Phone smartphone preview">
       <div className="visual-grid" />
       <div className="device-shadow" />
       <div className="device">
-        <div className="device-screen"><span>09:41</span><strong>ARC</strong></div>
+        <div className="device-screen"><span>09:41</span><strong>ARC</strong><small>SMARTPHONE / 01</small></div>
         <div className="device-edge" />
         <div className="device-detail" />
       </div>
@@ -86,7 +86,7 @@ export default function Page() {
             <p className="muted">{product.accent} edition</p>
             <div className="divider" />
             <div className="price-line"><span className="price">${product.price}</span><span className="price-caption">one-time<br />purchase</span></div>
-            <div className="card-details"><div><span>Material</span><strong>Recycled aluminum</strong></div><div><span>Finish</span><strong>Soft graphite</strong></div><div><span>Includes</span><strong>Arc One + cable</strong></div></div>
+            <div className="card-details"><div><span>Display</span><strong>6.7″ OLED</strong></div><div><span>Finish</span><strong>Violet glass</strong></div><div><span>Includes</span><strong>Arc Phone + cable</strong></div></div>
             <button className="text-button" type="button" onClick={() => setCheckout(true)}>View checkout <ArrowRight size={15} /></button>
           </aside>
         </section>
@@ -103,7 +103,7 @@ export default function Page() {
             <div className="success-panel"><div className="success-icon"><Check size={25} /></div><div className="section-label">Order confirmed</div><h2>You&apos;re in the flow.</h2><p>Your Arc One is reserved. We&apos;ll send the details to {email}.</p><button className="text-button" type="button" onClick={() => { setCheckout(false); setSuccess(false) }}>Return home <ArrowRight size={15} /></button></div>
           ) : (
             <form className="payment-card" onSubmit={submitPayment}>
-              <div className="order-line"><div><strong>{product.name}</strong><span>Graphite / One unit</span></div><div className="order-price">${total}</div></div>
+              <div className="order-line"><div><strong>{product.name}</strong><span>Violet glass / One unit</span></div><div className="order-price">${total}</div></div>
               <div className="quantity-line"><span>Quantity</span><Quantity quantity={quantity} setQuantity={setQuantity} /></div>
               <div className="divider" />
               <label>Email address<input type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="you@company.com" required /></label>
