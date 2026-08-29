@@ -80,7 +80,7 @@ export default function Page() {
           </aside>
         </section>
         <section className="testimonials" aria-label="Customer testimonials">
-          <div className="testimonials-heading"><span className="section-label">Loved by customers</span><span className="testimonial-rating">★★★★★</span></div>
+          <div className="testimonials-heading"><span className="section-label">Loved by customers</span></div>
           <div className="testimonial-list">
             <blockquote><p>“The most considered phone I&apos;ve ever used.”</p><cite>— Maya R.</cite></blockquote>
             <blockquote><p>“Beautifully simple. It just disappears into my day.”</p><cite>— Daniel K.</cite></blockquote>
