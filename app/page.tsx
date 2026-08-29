@@ -56,6 +56,7 @@ export default function Page() {
       </header>
 
       {!checkout ? (
+        <>
         <section className="store-grid" id="top">
           <div className="hero-copy">
             <div className="section-label"><Sparkles size={13} /> New release / 2026</div>
@@ -78,7 +79,17 @@ export default function Page() {
             <button className="text-button" type="button" onClick={() => setCheckout(true)}>View checkout <ArrowRight size={15} /></button>
           </aside>
         </section>
+        <section className="testimonials" aria-label="Customer testimonials">
+          <div className="testimonials-heading"><span className="section-label">Loved by customers</span></div>
+          <div className="testimonial-list">
+            <blockquote><p>“The most considered phone I&apos;ve ever used.”</p><cite>— Maya R.</cite></blockquote>
+            <blockquote><p>“Beautifully simple. It just disappears into my day.”</p><cite>— Daniel K.</cite></blockquote>
+            <blockquote><p>“The details are exceptional.”</p><cite>— Sofia L.</cite></blockquote>
+          </div>
+        </section>
+        </>
       ) : (
+
         <section className="checkout-layout">
           <div className="checkout-intro">
             <button className="back-button" type="button" onClick={() => { setCheckout(false); setSuccess(false) }}>← Back to product</button>
