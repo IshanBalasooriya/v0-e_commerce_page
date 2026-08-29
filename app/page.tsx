@@ -59,7 +59,7 @@ export default function Page() {
         <section className="store-grid" id="top">
           <div className="hero-copy">
             <div className="section-label"><Sparkles size={13} /> New release / 2026</div>
-            <h1>Make space<br /><em>for focus.</em></h1>
+            <h1>Welcome to<br /><em>My Store</em></h1>
             <p className="hero-description">{product.description}</p>
             <div className="hero-actions">
               <button className="primary-button" type="button" onClick={() => setCheckout(true)}>Buy Arc Phone <ArrowRight size={16} /></button>
