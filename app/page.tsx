@@ -15,7 +15,7 @@ function ProductVisual() {
   return (
     <div className="product-visual" aria-label="Space gray iPhone 17 Pro Max product photo">
       <div className="device-shadow" />
-      <img className="phone-product-image" src="/iphone-17-pro-max-seamless.png" alt="Space gray iPhone 17 Pro Max floating freely" />
+      <img className="phone-product-image" src="/iphone-17-pro-max-clean.png" alt="Space gray iPhone 17 Pro Max floating freely" />
     </div>
   )
 }
