@@ -13,14 +13,9 @@ const product = {
 
 function ProductVisual() {
   return (
-    <div className="product-visual" aria-label="Arc Phone smartphone preview">
-      <div className="visual-grid" />
+    <div className="product-visual" aria-label="Space gray iPhone 17 Pro Max product photo">
       <div className="device-shadow" />
-      <div className="device">
-        <div className="device-screen"><span>09:41</span><strong>ARC</strong><small>SMARTPHONE / 01</small></div>
-        <div className="device-edge" />
-        <div className="device-detail" />
-      </div>
+      <img className="phone-product-image" src="/iphone-17-pro-max-space-gray.png" alt="Space gray iPhone 17 Pro Max floating in a dark studio" />
     </div>
   )
 }
