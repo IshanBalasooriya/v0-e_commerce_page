@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Arc One — Make space for focus',
+  description: 'Arc One is a precision-built desk companion designed for better focus and better days.',
   generator: 'v0.app',
   icons: {
     icon: [
